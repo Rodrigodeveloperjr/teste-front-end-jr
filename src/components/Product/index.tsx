@@ -2,27 +2,32 @@ import { Button } from "../Button";
 import { Container } from "./style";
 
 interface IProduct {
-  src: string;
-  alt: string;
-  name: string;
+  photo: string;
+  productName: string;
   price: number;
 }
 
-const Product = ({ src, alt, name, price }: IProduct) => {
+interface IProductComponent {
+  product: IProduct;
+}
+
+const Product = ({ product }: IProductComponent) => {
+  const discount = product.price / 2;
+
   return (
     <Container>
-      <img src={src} alt={alt} />
+      <img src={product.photo} alt={product.productName} />
 
       <div>
-        <h3>{name}</h3>
+        <h3>{product.productName}</h3>
 
         <div>
-          <span>R$ {price}</span>
-          <span>R$ {price}</span>
+          <span>R$ {product.price.toFixed(2).replace(".", ",")}</span>
+          <span>R$ {product.price.toFixed(2).replace(".", ",")}</span>
         </div>
 
         <div>
-          <p>ou 2x de R$ {price / 2} sem juros</p>
+          <p>ou 2x de R$ {discount.toFixed(2).replace(".", ",")} sem juros</p>
 
           <span>Frete grátis</span>
         </div>

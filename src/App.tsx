@@ -1,7 +1,7 @@
 import { Banner } from "./components/Banner";
 import { Categories } from "./components/Categories";
 import { Header } from "./components/Header";
-import { NavProducts } from "./components/NavProducts";
+import { RelatedProducts } from "./components/RelatedProducts";
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <Header />
       <Banner />
       <Categories />
-      <NavProducts />
+      <RelatedProducts />
     </>
   );
 };
