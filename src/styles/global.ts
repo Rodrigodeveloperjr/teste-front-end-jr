@@ -21,6 +21,7 @@ export default createGlobalStyle`
     --color-white-two: #F6F5F2;
     --color-white-three: #F4F4F4;
     --color-white-four: #F0F0F0;
+    --coloer-white-five: #F7F5F2;
     --shadow: rgba(0, 0, 0, 0.13);
   }
 
