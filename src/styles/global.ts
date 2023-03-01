@@ -23,6 +23,7 @@ export default createGlobalStyle`
     --color-white-four: #F0F0F0;
     --coloer-white-five: #F7F5F2;
     --shadow: rgba(0, 0, 0, 0.13);
+    --shadow-two: rgba(57, 48, 19, 0.12);
   }
 
 	body {

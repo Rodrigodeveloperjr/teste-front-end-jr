@@ -7,7 +7,7 @@ const Container = styled.div`
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   & > div {
@@ -16,12 +16,12 @@ const Container = styled.div`
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     & > div:nth-child(2) {
       width: 100%;
-      max-width: 272px;
+      max-width: 234.5px;
 
       display: flex;
       flex-direction: row;

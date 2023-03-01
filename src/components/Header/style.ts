@@ -4,7 +4,19 @@ const Container = styled.header`
   width: 100%;
   max-width: 1280px;
 
-  border-bottom: 1px solid var(--color-white-four);
+  box-shadow: 0px 8px 16px var(--shadow-two);
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background: var(--color-white-four);
+  }
 `;
 
 export { Container };
