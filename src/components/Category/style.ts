@@ -10,6 +10,15 @@ const Container = styled.div`
   justify-content: space-between;
   align-self: center;
 
+  &:nth-child(1) {
+    & > div {
+      background-color: var(--color-white);
+    }
+    & > p {
+      color: var(--color-pink);
+    }
+  }
+
   &:hover {
     & > div {
       background-color: var(--color-white);
@@ -31,7 +40,7 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  
+
     cursor: pointer;
   }
 

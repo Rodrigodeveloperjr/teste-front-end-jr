@@ -1,12 +1,12 @@
 import { Container } from "./style";
 
-interface IconProps {
+interface ICategory {
   src: string;
   alt: string;
   title: string;
 }
 
-const Icon = ({ src, alt, title }: IconProps) => {
+const Category = ({ src, alt, title }: ICategory) => {
   return (
     <Container>
       <div>
@@ -18,4 +18,4 @@ const Icon = ({ src, alt, title }: IconProps) => {
   );
 };
 
-export { Icon };
+export { Category };
