@@ -18,6 +18,7 @@ export default createGlobalStyle`
     --color-gray-four: #DEDEDE;
     --color-gray-five: #BDBDBD;
     --color-gray-six: #3B3B3B;
+    --color-gray-seven: #808080;
     --color-black: #1E1E1E;
     --color-black-two: #2A2A2A;
     --color-black-three: #000000;
@@ -28,6 +29,7 @@ export default createGlobalStyle`
     --coloer-white-five: #F7F5F2;
     --shadow: rgba(0, 0, 0, 0.13);
     --shadow-two: rgba(57, 48, 19, 0.12);
+    --shadow-three: rgba(0, 0, 0, 0.22);
   }
 
 	body {
