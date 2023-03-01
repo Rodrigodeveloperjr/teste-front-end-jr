@@ -15,6 +15,9 @@ export default createGlobalStyle`
     --color-gray: #9F9F9F;
     --color-gray-two: #3F3F40;
     --color-gray-three: #4E4E4E;
+    --color-gray-four: #DEDEDE;
+    --color-gray-five: #BDBDBD;
+    --color-gray-six: #3B3B3B;
     --color-black: #1E1E1E;
     --color-black-two: #2A2A2A;
     --color-black-three: #000000;

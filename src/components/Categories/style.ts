@@ -13,7 +13,7 @@ const Container = styled.menu`
   align-self: center;
 
   margin: 0 auto;
-  padding: 34px 0 39px 0;
+  padding-top: 34px;
 `;
 
 export { Container };
