@@ -31,7 +31,7 @@ yarn dev
 ### Acessando o projeto através vercel
 
 ```
-https://git-search-beta.vercel.app/
+https://teste-front-end-jr-beta.vercel.app/
 ```
 
 ---
