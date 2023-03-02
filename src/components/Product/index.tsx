@@ -33,7 +33,11 @@ const Product = ({ product, setOpenModal }: IProductComponent) => {
           <span>Frete grátis</span>
         </div>
 
-        <Button size="large" onClick={() => setOpenModal(true)}>
+        <Button size="large" onClick={() => {
+          setOpenModal(true)
+          
+          sessionStorage.setItem("VTEX: name", product.productName)
+        }}>
           Comprar
         </Button>
       </div>

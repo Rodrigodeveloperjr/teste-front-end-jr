@@ -1,28 +1,28 @@
-import photo from "../../assets/Grupo de máscara 20 1.png";
 import { Container } from "./style";
 import x from "../../assets/x.svg";
 
 interface IModalDetailsProduct {
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
+  product: any;
 }
 
-const ModalDetailsProduct = ({ setOpenModal }: IModalDetailsProduct) => {
+const ModalDetailsProduct = ({
+  setOpenModal,
+  product,
+}: IModalDetailsProduct) => {
   return (
     <Container>
       <img src={x} alt="" onClick={() => setOpenModal(false)} />
 
       <div>
-        <img src={photo} alt="" />
+        <img src={product.photo} alt={product.productName} />
 
         <div>
-          <h2>LOREM IPSUM DOLOR SIT AMET</h2>
+          <h2>{product.productName}</h2>
 
-          <span>R$ 1.499,90</span>
+          <span>R$ {product.price.toFixed(2).replace(".", ",")}</span>
 
-          <p>
-            Many desktop publishing packages and web page editors now many
-            desktop publishing
-          </p>
+          <p>{product.description}</p>
 
           <a>Veja mais detalhes do produto {">"}</a>
         </div>

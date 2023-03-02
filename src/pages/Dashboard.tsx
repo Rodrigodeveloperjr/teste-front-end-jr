@@ -8,16 +8,32 @@ import { ListCards } from "../components/ListCard";
 import { Banner } from "../components/Banner";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { api } from "../services/api";
 
 const Dashboard = () => {
+  const name = sessionStorage.getItem("VTEX: name");
+
+  const [products, setProducts] = useState<any>();
+
   const [openModal, setOpenModal] = useState<boolean>(false);
+
+  useEffect(() => {
+    api
+      .get("")
+      .then((res) => setProducts(res.data.products))
+      .catch((error) => console.log(error));
+  }, []);
+
+  const product = products.filter(
+    (product: any) => product.productName === name
+  );
 
   return (
     <React.Fragment>
       {openModal ? (
         <ModalBackground>
-          <ModalDetailsProduct setOpenModal={setOpenModal} />
+          <ModalDetailsProduct setOpenModal={setOpenModal} product={product} />
         </ModalBackground>
       ) : null}
       <div>
@@ -26,10 +42,10 @@ const Dashboard = () => {
         <Categories />
         <RelatedProducts />
         <ListCards />
-        <OtherRelatedProducts setOpenModal={setOpenModal} />
+        <OtherRelatedProducts products={products} setOpenModal={setOpenModal} />
         <ListCards />
         <ListBrands />
-        <OtherRelatedProducts setOpenModal={setOpenModal} />
+        <OtherRelatedProducts products={products} setOpenModal={setOpenModal} />
         <Footer />
       </div>
     </React.Fragment>
