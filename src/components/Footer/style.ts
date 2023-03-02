@@ -61,6 +61,24 @@ const Container = styled.footer`
             cursor: pointer;
           }
         }
+
+        & > div {
+          width: 100%;
+          max-width: 195px;
+
+          flex-wrap: wrap;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          padding-top: 24px;
+
+          & > img {
+            width: 40px;
+            margin: 10px 10px 10px 0;
+          }
+        }
       }
     }
   }
