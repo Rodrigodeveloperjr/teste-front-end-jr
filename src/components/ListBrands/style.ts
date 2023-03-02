@@ -25,6 +25,7 @@ const Container = styled.div`
   & > menu {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
 
     position: relative;

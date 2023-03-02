@@ -1,4 +1,5 @@
 import cart from "../../assets/ShoppingCart.svg";
+import { HamburgerMenu } from "../HamburgerMenu";
 import user from "../../assets/UserCircle.svg";
 import logo from "../../assets/Group 35.svg";
 import heart from "../../assets/Heart.svg";
@@ -7,11 +8,21 @@ import { Container } from "./style";
 import { Input } from "../Input";
 
 const UserInformation = () => {
+  const screenWidth = window.screen.width;
+
   return (
     <Container>
-      <img src={logo} alt="logo" />
+      {screenWidth >= 768 ? (
+        <img src={logo} alt="logo" />
+      ) : (
+        <div className="divLogo">
+          <img src={logo} alt="logo" />
 
-      <div>
+          <HamburgerMenu />
+        </div>
+      )}
+
+      <div className="divInput">
         <Input />
         <div>
           <img src={box} alt="caixa" />

@@ -10,7 +10,16 @@ const Container = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  & > div {
+  & > .divLogo {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .divInput {
     width: 100%;
     max-width: 990px;
 
@@ -40,7 +49,7 @@ const Container = styled.div`
 
     padding: 20px 10px;
 
-    & > div {
+    & > .divInput {
       flex-direction: column;
     }
   }
