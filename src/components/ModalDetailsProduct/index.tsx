@@ -1,11 +1,15 @@
 import photo from "../../assets/Grupo de máscara 20 1.png";
-import x from "../../assets/x.svg"
 import { Container } from "./style";
+import x from "../../assets/x.svg";
 
-const ModalDetailsProduct = () => {
+interface IModalDetailsProduct {
+  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const ModalDetailsProduct = ({ setOpenModal }: IModalDetailsProduct) => {
   return (
     <Container>
-      <img src={x} alt="" />
+      <img src={x} alt="" onClick={() => setOpenModal(false)} />
 
       <div>
         <img src={photo} alt="" />

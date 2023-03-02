@@ -5,7 +5,11 @@ import { api } from "../../services/api";
 import { Product } from "../Product";
 import { Container } from "./style";
 
-const ListProducts = () => {
+interface IListProducts {
+  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const ListProducts = ({ setOpenModal }: IListProducts) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -20,7 +24,7 @@ const ListProducts = () => {
       <img src={arrowLeft} alt="seta para esquerda" />
       <menu>
         {products.map((product, i) => (
-          <Product product={product} key={i} />
+          <Product product={product} key={i} setOpenModal={setOpenModal} />
         ))}
       </menu>
       <img src={arrowRight} alt="seta para direita" />

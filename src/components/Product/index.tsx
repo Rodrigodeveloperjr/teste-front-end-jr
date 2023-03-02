@@ -9,9 +9,10 @@ interface IProduct {
 
 interface IProductComponent {
   product: IProduct;
+  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Product = ({ product }: IProductComponent) => {
+const Product = ({ product, setOpenModal }: IProductComponent) => {
   const discount = product.price / 2;
 
   return (
@@ -32,7 +33,9 @@ const Product = ({ product }: IProductComponent) => {
           <span>Frete grátis</span>
         </div>
 
-        <Button size="large">Comprar</Button>
+        <Button size="large" onClick={() => setOpenModal(true)}>
+          Comprar
+        </Button>
       </div>
     </Container>
   );

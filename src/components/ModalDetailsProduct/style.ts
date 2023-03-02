@@ -16,6 +16,8 @@ const Container = styled.div`
   & > img {
     width: 30px;
     height: 30px;
+
+    cursor: pointer;
   }
 
   & > div {

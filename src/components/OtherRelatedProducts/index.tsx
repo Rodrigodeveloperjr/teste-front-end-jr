@@ -1,8 +1,12 @@
-import { ListProducts } from "../ListProducts";
 import { TitleRelatedProducts } from "../TitleRelatedProducts";
+import { ListProducts } from "../ListProducts";
 import { Container } from "./style";
 
-const OtherRelatedProducts = () => {
+interface IOtherRelatedProducts {
+  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const OtherRelatedProducts = ({ setOpenModal }: IOtherRelatedProducts) => {
   return (
     <Container>
       <div>
@@ -10,7 +14,7 @@ const OtherRelatedProducts = () => {
         <p>Ver todos</p>
       </div>
 
-      <ListProducts />
+      <ListProducts setOpenModal={setOpenModal} />
     </Container>
   );
 };
