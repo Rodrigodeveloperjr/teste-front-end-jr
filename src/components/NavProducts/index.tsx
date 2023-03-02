@@ -6,14 +6,14 @@ const NavProducts = () => {
     <Container>
       <TitleRelatedProducts />
 
-      <nav>
-        <a>celular</a>
-        <a>acessórios</a>
-        <a>tablets</a>
-        <a>notebooks</a>
-        <a>TVs</a>
-        <a>Ver todos</a>
-      </nav>
+      <div>
+        <p>celular</p>
+        <p>acessórios</p>
+        <p>tablets</p>
+        <p>notebooks</p>
+        <p>TVs</p>
+        <p>Ver todos</p>
+      </div>
     </Container>
   );
 };

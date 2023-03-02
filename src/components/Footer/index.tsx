@@ -24,11 +24,11 @@ const Footer = () => {
           <div>
             <h3>Sobre nós</h3>
 
-            <nav>
-              <a>Conheça</a>
-              <a>COMO COMPRAR</a>
-              <a>Indicação e Desconto</a>
-            </nav>
+            <div>
+              <p>Conheça</p>
+              <p>COMO COMPRAR</p>
+              <p>Indicação e Desconto</p>
+            </div>
 
             <nav className="navSocialMedia">
               <a href="https://vtex.com/us-en/contact" target="_blank">
@@ -45,19 +45,19 @@ const Footer = () => {
           <div>
             <h3>INFORMAÇÕES ÚTEIS</h3>
 
-            <nav>
-              <a>FALE CONOSCO</a>
-              <a>DÚVIDAS</a>
-              <a>Prazos de Entrega</a>
-              <a>Formas de Pagamento</a>
-              <a>Política de privacidade</a>
-              <a>Trocas e Devoluções</a>
-            </nav>
+            <div>
+              <p>FALE CONOSCO</p>
+              <p>DÚVIDAS</p>
+              <p>Prazos de Entrega</p>
+              <p>Formas de Pagamento</p>
+              <p>Política de privacidade</p>
+              <p>Trocas e Devoluções</p>
+            </div>
           </div>
           <div>
             <h3>FORMAS DE PAGAMENTO</h3>
 
-            <div>
+            <div className="paymentMethods">
               <img src={visa} alt="visa" />
               <img src={elo} alt="elo" />
               <img src={alelo} alt="alelo" />

@@ -33,13 +33,13 @@ const Container = styled.footer`
           color: var(--color-white);
         }
 
-        & > nav {
+        & > div, & > nav {
           display: flex;
           flex-direction: column;
 
           padding-top: 24px;
 
-          & > a {
+          & > p {
             font-weight: 300;
             font-size: 12px;
             line-height: 32px;
@@ -62,7 +62,7 @@ const Container = styled.footer`
           }
         }
 
-        & > div {
+        & > .paymentMethods {
           width: 100%;
           max-width: 195px;
 

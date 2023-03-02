@@ -15,7 +15,7 @@ const Container = styled.div`
   padding-top: 120px;
   margin: 0 auto;
 
-  & > nav {
+  & > div:nth-child(2) {
     width: 100%;
     height: 40px;
 
@@ -28,7 +28,7 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    & > a {
+    & > p {
       font-weight: 400;
       font-size: 16px;
       line-height: 16px;

@@ -9,7 +9,6 @@ import React, { useEffect, useState } from "react";
 import { Banner } from "../components/Banner";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { api } from "../services/api";
 import { IProduct } from "../interfaces";
 
 const Dashboard = () => {
@@ -20,9 +19,11 @@ const Dashboard = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
 
   useEffect(() => {
-    api
-      .get("")
-      .then((res) => setProducts(res.data.products))
+    fetch(
+      "https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json"
+    )
+      .then((res) => res.json())
+      .then((data) => setProducts(data.products))
       .catch((error) => console.log(error));
   }, []);
 

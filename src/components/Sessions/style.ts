@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Container = styled.nav`
+const Container = styled.div`
   width: 100%;
   max-width: 1141px;
   height: 40px;
@@ -10,7 +10,7 @@ const Container = styled.nav`
   justify-content: space-between;
   align-items: center;
 
-  & > a {
+  p {
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
@@ -23,7 +23,7 @@ const Container = styled.nav`
     color: var(--color-pink);
   }
 
-  & > a:nth-last-child(1) {
+  & > div:nth-last-child(1) {
     display: flex;
     flex-direction: row;
 
