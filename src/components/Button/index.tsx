@@ -1,10 +1,5 @@
+import { IButton } from "../../interfaces";
 import { Container } from "./style";
-
-interface IButton {
-  children: React.ReactNode;
-  size: "large" | "medium" | "small";
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
-}
 
 const Button = ({ children, size, onClick }: IButton) => {
   return (

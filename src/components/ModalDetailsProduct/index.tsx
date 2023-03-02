@@ -1,10 +1,6 @@
+import { IModalDetailsProduct } from "../../interfaces";
 import { Container } from "./style";
 import x from "../../assets/x.svg";
-
-interface IModalDetailsProduct {
-  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
-  product: any;
-}
 
 const ModalDetailsProduct = ({
   setOpenModal,
@@ -12,17 +8,17 @@ const ModalDetailsProduct = ({
 }: IModalDetailsProduct) => {
   return (
     <Container>
-      <img src={x} alt="" onClick={() => setOpenModal(false)} />
+      <img src={x} alt="x" onClick={() => setOpenModal(false)} />
 
       <div>
-        <img src={product.photo} alt={product.productName} />
+        <img src={product?.photo} alt={product?.productName} />
 
         <div>
-          <h2>{product.productName}</h2>
+          <h2>{product?.productName}</h2>
 
-          <span>R$ {product.price.toFixed(2).replace(".", ",")}</span>
+          <span>R$ {product?.price.toFixed(2).replace(".", ",")}</span>
 
-          <p>{product.description}</p>
+          <p>{product?.descriptionShort}</p>
 
           <a>Veja mais detalhes do produto {">"}</a>
         </div>

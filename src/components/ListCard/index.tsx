@@ -1,5 +1,5 @@
-import { Card } from '../Card'
-import { Container } from './style'
+import { Container } from "./style";
+import { Card } from "../Card";
 
 const ListCards = () => {
   return (
@@ -7,7 +7,7 @@ const ListCards = () => {
       <Card />
       <Card />
     </Container>
-  )
-}
+  );
+};
 
-export { ListCards }
+export { ListCards };

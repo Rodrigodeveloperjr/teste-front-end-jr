@@ -1,23 +1,20 @@
 import { FormNewsAndPromotions } from "../FormNewsAndPromotions";
-import { Container } from "./style";
-
 import instagram from "../../assets/044-instagram.svg";
 import facebook from "../../assets/023-facebook.svg";
-import youtube from "../../assets/116-youtube.svg";
-
-import econverse from "../../assets/Grupo 1999.svg";
-import vtex from "../../assets/Group 35 (1).svg";
-
-import visa from "../../assets/Group 1351.svg";
-import elo from "../../assets/elo.svg";
-import alelo from "../../assets/alelo.svg";
-import dinners from "../../assets/dinners.svg";
-import ifood from "../../assets/ifood.svg";
 import mastercard from "../../assets/mastercard.svg";
-import pix from "../../assets/pix.svg";
-import amex from "../../assets/amex.svg";
-import ticket from "../../assets/ticket.svg";
+import econverse from "../../assets/Grupo 1999.svg";
+import youtube from "../../assets/116-youtube.svg";
+import vtex from "../../assets/Group 35 (1).svg";
+import visa from "../../assets/Group 1351.svg";
+import dinners from "../../assets/dinners.svg";
 import sodexo from "../../assets/sodexo.svg";
+import ticket from "../../assets/ticket.svg";
+import alelo from "../../assets/alelo.svg";
+import ifood from "../../assets/ifood.svg";
+import amex from "../../assets/amex.svg";
+import pix from "../../assets/pix.svg";
+import elo from "../../assets/elo.svg";
+import { Container } from "./style";
 
 const Footer = () => {
   return (

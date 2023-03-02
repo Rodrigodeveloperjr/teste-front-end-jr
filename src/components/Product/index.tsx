@@ -1,16 +1,6 @@
-import { Button } from "../Button";
+import { IProductComponent } from "../../interfaces";
 import { Container } from "./style";
-
-interface IProduct {
-  photo: string;
-  productName: string;
-  price: number;
-}
-
-interface IProductComponent {
-  product: IProduct;
-  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
-}
+import { Button } from "../Button";
 
 const Product = ({ product, setOpenModal }: IProductComponent) => {
   const discount = product.price / 2;
@@ -33,11 +23,14 @@ const Product = ({ product, setOpenModal }: IProductComponent) => {
           <span>Frete grátis</span>
         </div>
 
-        <Button size="large" onClick={() => {
-          setOpenModal(true)
-          
-          sessionStorage.setItem("VTEX: name", product.productName)
-        }}>
+        <Button
+          size="large"
+          onClick={() => {
+            setOpenModal(true);
+
+            sessionStorage.setItem("VTEX: name", product.productName);
+          }}
+        >
           Comprar
         </Button>
       </div>

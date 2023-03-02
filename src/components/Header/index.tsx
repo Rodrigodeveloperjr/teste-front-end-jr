@@ -1,6 +1,6 @@
 import { InitialInformation } from "../InitialInformation";
-import { Sessions } from "../Sessions";
 import { UserInformation } from "../UserInformation";
+import { Sessions } from "../Sessions";
 import { Container } from "./style";
 
 const Header = () => {

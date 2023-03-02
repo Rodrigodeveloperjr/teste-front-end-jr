@@ -1,5 +1,5 @@
-import { Button } from "../Button";
 import { Container } from "./style";
+import { Button } from "../Button";
 
 const FormNewsAndPromotions = () => {
   return (

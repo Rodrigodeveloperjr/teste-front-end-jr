@@ -5,16 +5,17 @@ import { ModalBackground } from "../components/ModalBackground";
 import { Categories } from "../components/Categories";
 import { ListBrands } from "../components/ListBrands";
 import { ListCards } from "../components/ListCard";
+import React, { useEffect, useState } from "react";
 import { Banner } from "../components/Banner";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import React, { useEffect, useState } from "react";
 import { api } from "../services/api";
+import { IProduct } from "../interfaces";
 
 const Dashboard = () => {
   const name = sessionStorage.getItem("VTEX: name");
 
-  const [products, setProducts] = useState<any>();
+  const [products, setProducts] = useState<Array<IProduct>>([]);
 
   const [openModal, setOpenModal] = useState<boolean>(false);
 
@@ -25,8 +26,8 @@ const Dashboard = () => {
       .catch((error) => console.log(error));
   }, []);
 
-  const product = products.filter(
-    (product: any) => product.productName === name
+  const product = products.find(
+    (product: IProduct) => product.productName === name
   );
 
   return (
@@ -40,7 +41,7 @@ const Dashboard = () => {
         <Header />
         <Banner />
         <Categories />
-        <RelatedProducts />
+        <RelatedProducts products={products} setOpenModal={setOpenModal} />
         <ListCards />
         <OtherRelatedProducts products={products} setOpenModal={setOpenModal} />
         <ListCards />

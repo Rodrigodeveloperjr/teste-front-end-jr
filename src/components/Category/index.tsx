@@ -1,10 +1,5 @@
+import { ICategory } from "../../interfaces";
 import { Container } from "./style";
-
-interface ICategory {
-  src: string;
-  alt: string;
-  title: string;
-}
 
 const Category = ({ src, alt, title }: ICategory) => {
   return (

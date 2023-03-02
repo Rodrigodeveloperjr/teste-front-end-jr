@@ -1,16 +1,9 @@
 import { TitleRelatedProducts } from "../TitleRelatedProducts";
+import { IListProducts } from "../../interfaces";
 import { ListProducts } from "../ListProducts";
 import { Container } from "./style";
 
-interface IOtherRelatedProducts {
-  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
-  products: any;
-}
-
-const OtherRelatedProducts = ({
-  setOpenModal,
-  products,
-}: IOtherRelatedProducts) => {
+const OtherRelatedProducts = ({ setOpenModal, products }: IListProducts) => {
   return (
     <Container>
       <div>
