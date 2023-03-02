@@ -1,3 +1,4 @@
+import arrowRight from "../../assets/Vector (2).svg";
 import { Container } from "./style";
 import { Brand } from "../Brand";
 
@@ -12,6 +13,10 @@ const ListBrands = () => {
         <Brand />
         <Brand />
         <Brand />
+
+        <div className="arrowRight">
+          <img src={arrowRight} alt="seta para a direita" />
+        </div>
       </menu>
     </Container>
   );

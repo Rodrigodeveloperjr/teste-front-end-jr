@@ -8,7 +8,6 @@ const Container = styled.div`
   position: relative;
   border-radius: 10px;
 
-
   & > img {
     width: 100%;
     height: 284px;

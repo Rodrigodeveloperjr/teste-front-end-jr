@@ -7,6 +7,8 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
+  position: relative;
+
   & > h2 {
     font-weight: 700;
     font-size: 30px;
@@ -19,6 +21,9 @@ const Container = styled.div`
   & > menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    position: relative;
 
     padding: 10px;
 
@@ -28,6 +33,22 @@ const Container = styled.div`
 
     &::-webkit-scrollbar {
       display: none;
+    }
+
+    & > .arrowRight {
+      position: absolute;
+      right: 30px;
+      width: 56px;
+      height: 56px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 50%;
+      background: var(--color-white);
+      box-shadow: 0px 4px 10px var(--shadow-five);
     }
   }
 `;

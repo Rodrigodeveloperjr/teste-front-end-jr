@@ -10,6 +10,6 @@ const Container = styled.div`
   & > menu {
     padding-top: 70px;
   }
-`
+`;
 
-export { Container }
+export { Container };

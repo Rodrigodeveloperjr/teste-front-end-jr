@@ -1,6 +1,6 @@
 import arrowRight from "../../assets/Vector (1).svg";
-import arrowLeft from "../../assets/Vector.svg";
 import { IListProducts } from "../../interfaces";
+import arrowLeft from "../../assets/Vector.svg";
 import { Product } from "../Product";
 import { Container } from "./style";
 

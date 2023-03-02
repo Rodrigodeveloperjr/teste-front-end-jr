@@ -43,6 +43,7 @@ export default createGlobalStyle`
     --shadow-two: rgba(57, 48, 19, 0.12);
     --shadow-three: rgba(0, 0, 0, 0.22);
     --shadow-four: rgba(0, 0, 0, 0.54);
+    --shadow-five: rgba(0, 0, 0, 0.18);
 
 
     // Others Color
