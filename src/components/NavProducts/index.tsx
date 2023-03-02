@@ -1,9 +1,10 @@
+import { TitleRelatedProducts } from "../TitleRelatedProducts";
 import { Container } from "./style";
 
 const NavProducts = () => {
   return (
     <Container>
-      <h2>Produtos relacionados</h2>
+      <TitleRelatedProducts />
 
       <nav>
         <a>celular</a>

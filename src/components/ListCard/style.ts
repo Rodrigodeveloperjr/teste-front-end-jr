@@ -10,7 +10,7 @@ const Container = styled.menu`
   justify-content: space-between;
   align-items: center;
 
-  margin: 150px auto;
+  margin: 150px auto 50px auto;
 `;
 
 export { Container };

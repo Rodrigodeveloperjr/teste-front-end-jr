@@ -15,36 +15,6 @@ const Container = styled.div`
   padding-top: 120px;
   margin: 0 auto;
 
-  & > h2 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 45px;
-
-    color: var(--color-pink);
-    padding-bottom: 4px;
-
-    &::before {
-      left: 76px;
-    }
-
-    &::after {
-      right: 76px;
-    }
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 20px;
-
-      width: 100%;
-      max-width: 360px;
-      height: 1px;
-
-      background-color: var(--color-gray-four);
-    }
-  }
-
   & > nav {
     width: 100%;
     height: 40px;
