@@ -14,7 +14,6 @@ const Container = styled.div`
     height: 395px;
 
     mix-blend-mode: normal;
-    opacity: 0.8;
   }
 
   & > div {
