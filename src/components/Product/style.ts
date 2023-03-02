@@ -43,6 +43,7 @@ const Container = styled.div`
         color: var(--color-gray-seven);
 
         padding-bottom: 2px;
+        text-decoration: line-through;
       }
 
       & > span:nth-child(2) {

@@ -19,6 +19,16 @@ const Container = styled.div`
   & > menu {
     display: flex;
     flex-direction: row;
+
+    padding: 10px;
+
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 `;
 

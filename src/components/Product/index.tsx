@@ -3,6 +3,7 @@ import { Container } from "./style";
 import { Button } from "../Button";
 
 const Product = ({ product, setOpenModal }: IProductComponent) => {
+  const priceOld = product.price + 2;
   const discount = product.price / 2;
 
   return (
@@ -13,7 +14,7 @@ const Product = ({ product, setOpenModal }: IProductComponent) => {
         <h3>{product.productName}</h3>
 
         <div>
-          <span>R$ {product.price.toFixed(2).replace(".", ",")}</span>
+          <span>R$ {priceOld.toFixed(2).replace(".", ",")}</span>
           <span>R$ {product.price.toFixed(2).replace(".", ",")}</span>
         </div>
 

@@ -23,6 +23,8 @@ const Container = styled.div`
     border-bottom: 1.5px solid var(--color-gray-five);
     border-right: 1.5px solid var(--color-gray-five);
 
+    flex-wrap: wrap;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;

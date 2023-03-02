@@ -11,8 +11,8 @@ const Container = styled.div`
   align-items: center;
 
   border-radius: 10px;
-  background-color: var(--coloer-white-five);
-  border: 1.5px solid var(--coloer-white-five);
+  background-color: var(--color-white-five);
+  border: 1.5px solid var(--color-white-five);
 
   padding: 10px 16px 10px 24px;
 
@@ -26,7 +26,7 @@ const Container = styled.div`
     font-size: 14px;
     line-height: 21px;
 
-    background-color: var(--coloer-white-five);
+    background-color: var(--color-white-five);
 
     &::placeholder {
       color: var(--color-gray);

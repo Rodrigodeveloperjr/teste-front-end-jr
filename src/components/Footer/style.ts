@@ -23,7 +23,7 @@ const Container = styled.footer`
       flex-direction: row;
 
       & > div {
-        padding-left: 93px;
+        padding-right: 93px;
 
         & > h3 {
           font-weight: 700;
@@ -33,7 +33,8 @@ const Container = styled.footer`
           color: var(--color-white);
         }
 
-        & > div, & > nav {
+        & > div,
+        & > nav {
           display: flex;
           flex-direction: column;
 
@@ -115,6 +116,17 @@ const Container = styled.footer`
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    & > div:nth-child(1),
+    & > div:nth-child(2) {
+      justify-content: center;
+
+      & > div {
+        display: none;
+      }
     }
   }
 `;

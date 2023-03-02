@@ -57,6 +57,10 @@ const Container = styled.div`
       padding-bottom: 32px;
     }
   }
+
+  @media (max-width: 1440px) {
+    margin-bottom: 30px;
+  }
 `;
 
 export { Container };

@@ -11,6 +11,12 @@ const Container = styled.menu`
   align-items: center;
 
   margin: 150px auto 50px auto;
+
+  @media (max-width: 1440px) {
+    height: unset;
+    margin: 150px auto 400px auto;
+    flex-direction: column;
+  }
 `;
 
 export { Container };
