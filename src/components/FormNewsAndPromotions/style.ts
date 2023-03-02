@@ -66,8 +66,15 @@ const Container = styled.form`
       border-radius: 4px;
       margin-right: 9px;
 
-      &:hover {
+      &::placeholder {
         color: var(--color-white-six);
+      }
+
+      &:focus::-webkit-input-placeholder {
+        color: var(--color-transparent);
+      }
+      &:focus::-moz-placeholder {
+        color: var(--color-transparent);
       }
     }
   }

@@ -8,16 +8,16 @@ import youtube from "../../assets/116-youtube.svg";
 import econverse from "../../assets/Grupo 1999.svg";
 import vtex from "../../assets/Group 35 (1).svg";
 
-import visa from "../../assets/Group 1351.svg"
-import elo from "../../assets/elo.svg"
-import alelo from "../../assets/alelo.svg"
-import dinners from "../../assets/dinners.svg"
-import ifood from "../../assets/ifood.svg"
-import mastercard from "../../assets/mastercard.svg"
-import pix from "../../assets/pix.svg"
-import amex from "../../assets/amex.svg"
-import ticket from "../../assets/ticket.svg"
-import sodexo from "../../assets/sodexo.svg"
+import visa from "../../assets/Group 1351.svg";
+import elo from "../../assets/elo.svg";
+import alelo from "../../assets/alelo.svg";
+import dinners from "../../assets/dinners.svg";
+import ifood from "../../assets/ifood.svg";
+import mastercard from "../../assets/mastercard.svg";
+import pix from "../../assets/pix.svg";
+import amex from "../../assets/amex.svg";
+import ticket from "../../assets/ticket.svg";
+import sodexo from "../../assets/sodexo.svg";
 
 const Footer = () => {
   return (
@@ -34,9 +34,15 @@ const Footer = () => {
             </nav>
 
             <nav className="navSocialMedia">
-              <img src={facebook} alt="facebook" />
-              <img src={instagram} alt="instagram" />
-              <img src={youtube} alt="youtube" />
+              <a href="https://vtex.com/us-en/contact" target="_blank">
+                <img src={facebook} alt="facebook" />
+              </a>
+              <a href="https://www.instagram.com/vtexbrasil" target="_blank">
+                <img src={instagram} alt="instagram" />
+              </a>
+              <a href="https://www.youtube.com/@VTEX-Commerce" target="_blank">
+                <img src={youtube} alt="youtube" />
+              </a>
             </nav>
           </div>
           <div>

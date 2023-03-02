@@ -25,9 +25,9 @@ const Container = styled.button<IButtonStyle>`
 
   color: var(--color-white);
 
-  :disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+  &:hover {
+    background-color: var(--color-pink-two);
+    border-color: var(--color-pink-two);
   }
 
   ${({ size }) => {

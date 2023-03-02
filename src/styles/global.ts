@@ -12,6 +12,7 @@ export default createGlobalStyle`
 
 	:root {
     --color-pink: #F71963;
+    --color-pink-two: #AB3159;
     --color-gray: #9F9F9F;
     --color-gray-two: #3F3F40;
     --color-gray-three: #4E4E4E;
@@ -31,6 +32,7 @@ export default createGlobalStyle`
     --shadow: rgba(0, 0, 0, 0.13);
     --shadow-two: rgba(57, 48, 19, 0.12);
     --shadow-three: rgba(0, 0, 0, 0.22);
+    --color-transparent: transparent;
   }
 
 	body {

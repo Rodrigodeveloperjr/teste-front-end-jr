@@ -69,8 +69,15 @@ const Container = styled.div`
       background-color: var(--color-pink);
       border: 1.5px solid var(--color-pink);
 
+      transition: 0.5s;
+
       font-size: 18px;
       line-height: 27px;
+
+      &:hover {
+        background-color: var(--color-pink-two);
+        border-color: var(--color-pink-two);
+      }
     }
   }
 `;

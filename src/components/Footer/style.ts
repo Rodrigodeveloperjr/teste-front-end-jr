@@ -100,8 +100,8 @@ const Container = styled.footer`
       font-size: 10px;
       line-height: 13px;
 
-      color: var(--color-white);
       text-transform: uppercase;
+      color: var(--color-white);
 
       width: 100%;
       max-width: 698px;

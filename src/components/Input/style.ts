@@ -31,6 +31,14 @@ const Container = styled.div`
     &::placeholder {
       color: var(--color-gray);
     }
+
+    &:focus::-webkit-input-placeholder {
+      color: var(--color-transparent);
+    }
+
+    &:focus::-moz-placeholder {
+      color: var(--color-transparent);
+    }
   }
 
   & > img {
