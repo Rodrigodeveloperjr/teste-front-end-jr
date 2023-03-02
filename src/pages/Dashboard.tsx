@@ -10,7 +10,7 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { useEffect, useState } from "react";
 import { IProduct } from "../interfaces";
-import { Container } from "./Dashboard";
+import { Container } from "./style";
 
 const PRODUCTS_URL =
   "https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json";
