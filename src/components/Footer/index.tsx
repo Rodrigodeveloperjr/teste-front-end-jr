@@ -6,6 +6,7 @@ import econverse from "../../assets/Grupo 1999.svg";
 import vtex from "../../assets/Group 35 (1).svg";
 
 import { Container } from "./style";
+import { FormNewsAndPromotions } from "../FormNewsAndPromotions";
 
 const Footer = () => {
   return (
@@ -57,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <abbr />
+        <FormNewsAndPromotions />
       </div>
 
       <div>

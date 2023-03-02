@@ -13,7 +13,10 @@ const Container = styled.footer`
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+
+    padding: 33px 93px 33px 96px;
 
     & > div {
       display: flex;
