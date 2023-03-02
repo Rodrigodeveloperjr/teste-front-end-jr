@@ -23,6 +23,7 @@ export default createGlobalStyle`
     --color-black: #1E1E1E;
     --color-black-two: #2A2A2A;
     --color-black-three: #000000;
+    --color-black-four: #222222;
     --color-white: #FFFFFF;
     --color-white-two: #F6F5F2;
     --color-white-three: #F4F4F4;
@@ -32,7 +33,9 @@ export default createGlobalStyle`
     --shadow: rgba(0, 0, 0, 0.13);
     --shadow-two: rgba(57, 48, 19, 0.12);
     --shadow-three: rgba(0, 0, 0, 0.22);
+    --shadow-four: rgba(0, 0, 0, 0.54);
     --color-transparent: transparent;
+    --color-blue: #041E50;
   }
 
 	body {
