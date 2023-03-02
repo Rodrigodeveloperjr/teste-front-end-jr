@@ -1,5 +1,6 @@
 import { Banner } from "./components/Banner";
 import { Categories } from "./components/Categories";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { ListBrands } from "./components/ListBrands";
 import { ListCards } from "./components/ListCard";
@@ -18,6 +19,7 @@ const App = () => {
       <ListCards />
       <ListBrands />
       <OtherRelatedProducts />
+      <Footer />
     </>
   );
 };
