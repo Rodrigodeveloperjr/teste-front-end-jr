@@ -31,6 +31,10 @@ const Container = styled.div`
   & > img {
     cursor: pointer;
     padding: 0 35px;
+
+    @media (max-width: 768px) {
+      padding: 0 15px;
+    }
   }
 `;
 

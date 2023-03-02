@@ -10,6 +10,8 @@ const Container = styled.div`
   justify-content: space-between;
   align-self: center;
 
+  margin: 0 10px;
+
   &:nth-child(1) {
     & > div {
       background-color: var(--color-white);

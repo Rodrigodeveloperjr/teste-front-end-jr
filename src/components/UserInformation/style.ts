@@ -33,6 +33,21 @@ const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 1440px) {
+    height: unset;
+    flex-direction: column;
+
+    padding: 20px 10px;
+
+    & > div {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 768px) {
+    align-items: flex-start;
+  }
 `;
 
 export { Container };

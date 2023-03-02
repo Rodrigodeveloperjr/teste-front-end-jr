@@ -50,6 +50,12 @@ const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 1440px) {
+    & > div:nth-child(2) {
+      display: none;
+    }
+  }
 `;
 
 export { Container };

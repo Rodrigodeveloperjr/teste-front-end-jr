@@ -10,6 +10,7 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { useEffect, useState } from "react";
 import { IProduct } from "../interfaces";
+import { Container } from "./Dashboard";
 
 const PRODUCTS_URL =
   "https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json";
@@ -41,13 +42,14 @@ const Dashboard = () => {
       ) : null}
       <Header />
       <Banner />
-      <Categories />
-      <RelatedProducts products={products} setOpenModal={setOpenModal} />
-      <ListCards />
-      <OtherRelatedProducts products={products} setOpenModal={setOpenModal} />
-      <ListCards />
-      <ListBrands />
-      <OtherRelatedProducts products={products} setOpenModal={setOpenModal} />
+      <Container>
+        <Categories />
+        <RelatedProducts products={products} setOpenModal={setOpenModal} />
+        <ListCards />
+        <OtherRelatedProducts products={products} setOpenModal={setOpenModal} />
+        <ListCards />
+        <OtherRelatedProducts products={products} setOpenModal={setOpenModal} />
+      </Container>
       <Footer />
     </div>
   );

@@ -10,6 +10,8 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  padding: 0 10px;
+
   & > div {
     display: flex;
     flex-direction: row;
@@ -32,6 +34,10 @@ const Container = styled.div`
         color: var(--color-pink);
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 

@@ -10,6 +10,8 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  padding: 0 10px;
+
   p {
     font-weight: 600;
     font-size: 12px;
@@ -32,6 +34,10 @@ const Container = styled.div`
     & > img {
       padding-right: 12px;
     }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 

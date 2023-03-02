@@ -19,6 +19,10 @@ const Container = styled.div`
 
     border: none;
     background-color: var(--color-gray-four);
+
+    @media (max-width: 1440px) {
+      display: none;
+    }
   }
 
   & > h2 {
@@ -28,6 +32,11 @@ const Container = styled.div`
 
     color: var(--color-pink);
     padding: 0 34px 4px 34px;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      padding: 0;
+    }
   }
 `;
 

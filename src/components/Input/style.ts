@@ -44,6 +44,10 @@ const Container = styled.div`
   & > img {
     cursor: pointer;
   }
+
+  @media (max-width: 1440px) {
+    margin: 15px 0;
+  }
 `;
 
 export { Container };

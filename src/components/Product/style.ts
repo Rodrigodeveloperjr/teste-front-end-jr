@@ -14,7 +14,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  margin-left: 62px;
+  margin-right: 62px;
 
   & > div {
     & > h3 {
@@ -75,6 +75,7 @@ const Container = styled.div`
       }
     }
   }
+
 `;
 
 export { Container };

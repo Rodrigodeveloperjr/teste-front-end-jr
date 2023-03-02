@@ -125,10 +125,23 @@ const Container = styled.footer`
     & > div:nth-child(1),
     & > div:nth-child(2) {
       justify-content: center;
+      text-align: center;
 
       & > div {
         display: none;
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    & > div:nth-child(1),
+    & > div:nth-child(2) {
+      padding: 20px;
+    }
+
+    & > div:nth-child(2) {
+      height: unset;
+      background-color: var(--color-black);
     }
   }
 `;

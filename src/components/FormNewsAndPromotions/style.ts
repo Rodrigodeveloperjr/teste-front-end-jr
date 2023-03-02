@@ -56,6 +56,8 @@ const Container = styled.form`
     margin-top: 31px;
 
     & > input {
+      width: 100%;
+
       border: 1px solid var(--color-black-two);
       padding: 13px 25px 12px 25px;
 

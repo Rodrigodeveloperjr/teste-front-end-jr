@@ -80,6 +80,40 @@ const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    & > div {
+      & > h1 {
+        font-size: 30px;
+        padding-bottom: 0;
+      }
+
+      & > h2 {
+        font-size: 26px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      padding: 52px 30px 50px 30px;
+
+      & > h1 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      & > h2 {
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+    }
+  }
 `;
 
 export { Container };
