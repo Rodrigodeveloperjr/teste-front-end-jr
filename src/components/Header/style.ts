@@ -16,6 +16,10 @@ const Container = styled.header`
     border: none;
     height: 1px;
     background: var(--color-white-four);
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 `;
 

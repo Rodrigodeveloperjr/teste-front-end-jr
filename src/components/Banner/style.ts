@@ -14,6 +14,7 @@ const Container = styled.div`
     height: 395px;
 
     mix-blend-mode: normal;
+    object-fit: cover;
   }
 
   & > div {
