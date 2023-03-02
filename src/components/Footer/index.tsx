@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
 
             <nav className="navSocialMedia">
-              <a href="https://vtex.com/us-en/contact" target="_blank">
+              <a href="https://www.facebook.com/vtexcommerce/" target="_blank">
                 <img src={facebook} alt="facebook" />
               </a>
               <a href="https://www.instagram.com/vtexbrasil" target="_blank">

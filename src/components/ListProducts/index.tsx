@@ -6,7 +6,7 @@ import { Container } from "./style";
 
 const ListProducts = ({ setOpenModal, products }: IListProducts) => {
   return (
-    <Container id="products">
+    <Container>
       <img src={arrowLeft} alt="seta para esquerda" />
       <menu>
         {products.map((product, i) => (

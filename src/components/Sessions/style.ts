@@ -17,6 +17,8 @@ const Container = styled.div`
 
     color: var(--color-gray);
     text-transform: uppercase;
+
+    cursor: pointer;
   }
 
   & > .aPink {

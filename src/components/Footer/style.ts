@@ -48,6 +48,8 @@ const Container = styled.footer`
             text-transform: uppercase;
             color: var(--color-white);
 
+            cursor: pointer;
+
             :hover {
               text-decoration: underline;
             }

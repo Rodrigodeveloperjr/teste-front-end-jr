@@ -41,9 +41,9 @@ const Container = styled.div`
 
       border-left: 1.5px solid var(--color-gray-five);
 
+      cursor: pointer;
       padding: 12px 58px;
 
-      &:hover,
       &:nth-child(1) {
         font-weight: 700;
         color: var(--color-pink);

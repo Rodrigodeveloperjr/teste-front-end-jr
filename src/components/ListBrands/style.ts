@@ -49,6 +49,8 @@ const Container = styled.div`
       border-radius: 50%;
       background: var(--color-white);
       box-shadow: 0px 4px 10px var(--shadow-five);
+
+      cursor: pointer;
     }
   }
 `;

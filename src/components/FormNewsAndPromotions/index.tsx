@@ -15,7 +15,7 @@ const FormNewsAndPromotions = () => {
       </p>
 
       <div>
-        <input placeholder="SEU E-MAIL" />
+        <input type="email" placeholder="SEU E-MAIL" />
         <Button size="small">OK</Button>
       </div>
     </Container>

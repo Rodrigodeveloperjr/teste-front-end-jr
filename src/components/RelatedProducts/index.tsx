@@ -5,7 +5,7 @@ import { Container } from "./style";
 
 const RelatedProducts = ({ setOpenModal, products }: IListProducts) => {
   return (
-    <Container>
+    <Container id="products">
       <NavProducts />
       <ListProducts products={products} setOpenModal={setOpenModal} />
     </Container>
