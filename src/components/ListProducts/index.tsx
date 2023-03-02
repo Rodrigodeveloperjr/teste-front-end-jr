@@ -1,3 +1,5 @@
+import arrowRight from "../../assets/Vector (1).svg";
+import arrowLeft from "../../assets/Vector.svg";
 import { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Product } from "../Product";
@@ -15,9 +17,13 @@ const ListProducts = () => {
 
   return (
     <Container>
-      {products.map((product, i) => (
-        <Product product={product} key={i} />
-      ))}
+      <img src={arrowLeft} alt="seta para esquerda" />
+      <menu>
+        {products.map((product, i) => (
+          <Product product={product} key={i} />
+        ))}
+      </menu>
+      <img src={arrowRight} alt="seta para direita" />
     </Container>
   );
 };

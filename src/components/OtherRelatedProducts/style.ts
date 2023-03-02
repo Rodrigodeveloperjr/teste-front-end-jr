@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  & > div {
+  & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
     justify-content: center;

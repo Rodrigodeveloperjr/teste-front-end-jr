@@ -1,14 +1,37 @@
 import styled from "styled-components";
 
-const Container = styled.menu`
+const Container = styled.div`
   width: 100%;
-  max-width: 1.266px;
-  height: 500px;
+  max-width: 1550px;
+
+  padding: 80px 0 69px 0;
 
   display: flex;
   flex-direction: row;
 
-  padding: 17px 0 69px 0;
+  margin: 0 auto;
+
+  & > menu {
+    height: 530px;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px;
+
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  & > img {
+    cursor: pointer;
+    padding: 0 35px;
+  }
 `;
 
 export { Container };

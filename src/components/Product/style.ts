@@ -14,7 +14,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  margin: 0 62px;
+  margin-left: 62px;
 
   & > div {
     & > h3 {
