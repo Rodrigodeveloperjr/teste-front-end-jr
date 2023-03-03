@@ -78,6 +78,27 @@ const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    height: unset;
+    padding: 20px;
+
+    & > div {
+      flex-direction: column;
+
+      & > div {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    & > div {
+      & > img {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 export { Container };
