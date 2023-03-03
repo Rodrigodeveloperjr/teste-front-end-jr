@@ -1,29 +1,36 @@
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { IModalDetailsProduct } from "../../interfaces";
 import { Container } from "./style";
 import x from "../../assets/x.svg";
+import React from "react";
 
 const ModalDetailsProduct = ({
   setOpenModal,
   product,
 }: IModalDetailsProduct) => {
   return (
-    <Container>
-      <img src={x} alt="x" onClick={() => setOpenModal(false)} />
-
-      <div>
-        <img src={product?.photo} alt={product?.productName} />
+    <React.Fragment>
+      <HelmetProvider>
+        <Helmet title={`${product?.productName} | VTEX`} />
+      </HelmetProvider>
+      <Container>
+        <img src={x} alt="x" onClick={() => setOpenModal(false)} />
 
         <div>
-          <h2>{product?.productName}</h2>
+          <img src={product?.photo} alt={product?.productName} />
 
-          <span>R$ {product?.price.toFixed(2).replace(".", ",")}</span>
+          <div>
+            <h2>{product?.productName}</h2>
 
-          <p>{product?.descriptionShort}</p>
+            <span>R$ {product?.price.toFixed(2).replace(".", ",")}</span>
 
-          <a>Veja mais detalhes do produto {">"}</a>
+            <p>{product?.descriptionShort}</p>
+
+            <a>Veja mais detalhes do produto {">"}</a>
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </React.Fragment>
   );
 };
 

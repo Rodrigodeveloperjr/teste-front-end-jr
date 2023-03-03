@@ -12,7 +12,7 @@ const UserInformation = () => {
 
   return (
     <Container>
-      {screenWidth >= 768 ? (
+      {screenWidth > 768 ? (
         <img src={logo} alt="logo" />
       ) : (
         <div className="divLogo">

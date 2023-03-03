@@ -2,13 +2,14 @@ import { OtherRelatedProducts } from "../components/OtherRelatedProducts";
 import { ModalDetailsProduct } from "../components/ModalDetailsProduct";
 import { RelatedProducts } from "../components/RelatedProducts";
 import { ModalBackground } from "../components/ModalBackground";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Categories } from "../components/Categories";
 import { ListBrands } from "../components/ListBrands";
 import { ListCards } from "../components/ListCard";
+import React, { useEffect, useState } from "react";
 import { Banner } from "../components/Banner";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { useEffect, useState } from "react";
 import { IProduct } from "../interfaces";
 import { Container } from "./style";
 
@@ -34,7 +35,10 @@ const Dashboard = () => {
   );
 
   return (
-    <div>
+    <React.Fragment>
+      <HelmetProvider>
+        <Helmet title="Dashboard | VTEX" />
+      </HelmetProvider>
       {openModal ? (
         <ModalBackground>
           <ModalDetailsProduct setOpenModal={setOpenModal} product={product} />
@@ -52,7 +56,7 @@ const Dashboard = () => {
         <OtherRelatedProducts products={products} setOpenModal={setOpenModal} />
       </Container>
       <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 
