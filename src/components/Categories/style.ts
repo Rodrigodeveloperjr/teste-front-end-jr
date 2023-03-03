@@ -16,16 +16,8 @@ const Container = styled.menu`
   padding-top: 34px;
 
   @media (max-width: 1100px) {
-    height: 300px;
+    height: unset;
     justify-content: center;
-  }
-
-  @media (max-width: 640px) {
-    height: 470px;
-  }
-
-  @media (max-width: 480px) {
-    height: 650px;
   }
 `;
 
