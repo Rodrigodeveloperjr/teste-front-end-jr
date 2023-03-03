@@ -13,11 +13,11 @@ const ListBrands = () => {
         <Brand />
         <Brand />
         <Brand />
-
-        <div className="arrowRight">
-          <img src={arrowRight} alt="seta para a direita" />
-        </div>
       </menu>
+
+      <div className="arrowRight">
+        <img src={arrowRight} alt="seta para a direita" />
+      </div>
     </Container>
   );
 };

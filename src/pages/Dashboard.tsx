@@ -48,6 +48,7 @@ const Dashboard = () => {
         <ListCards />
         <OtherRelatedProducts products={products} setOpenModal={setOpenModal} />
         <ListCards />
+        <ListBrands />
         <OtherRelatedProducts products={products} setOpenModal={setOpenModal} />
       </Container>
       <Footer />
