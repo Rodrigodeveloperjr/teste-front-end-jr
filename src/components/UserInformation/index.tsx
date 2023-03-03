@@ -8,19 +8,12 @@ import { Container } from "./style";
 import { Input } from "../Input";
 
 const UserInformation = () => {
-  const screenWidth = window.screen.width;
-
   return (
     <Container>
-      {screenWidth > 768 ? (
+      <div className="logoContainer">
         <img src={logo} alt="logo" />
-      ) : (
-        <div className="divLogo">
-          <img src={logo} alt="logo" />
-
-          <HamburgerMenu />
-        </div>
-      )}
+        <HamburgerMenu />
+      </div>
 
       <div className="divInput">
         <Input />

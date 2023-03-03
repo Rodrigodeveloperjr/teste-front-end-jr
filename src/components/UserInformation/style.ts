@@ -10,9 +10,7 @@ const Container = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  & > .divLogo {
-    width: 100%;
-
+  .logoContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -56,6 +54,14 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     align-items: flex-start;
+
+    .logoContainer {
+      width: 100%;
+
+      & > div {
+        display: flex;
+      }
+    }
   }
 `;
 

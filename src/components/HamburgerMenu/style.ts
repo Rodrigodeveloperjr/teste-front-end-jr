@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+  display: none;
+
   .menu {
     width: 60px;
     height: 60px;
