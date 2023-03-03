@@ -31,13 +31,25 @@ const Footer = () => {
             </div>
 
             <nav className="navSocialMedia">
-              <a href="https://www.facebook.com/vtexcommerce/" target="_blank">
+              <a
+                href="https://www.facebook.com/vtexcommerce/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={facebook} alt="facebook" />
               </a>
-              <a href="https://www.instagram.com/vtexbrasil" target="_blank">
+              <a
+                href="https://www.instagram.com/vtexbrasil"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={instagram} alt="instagram" />
               </a>
-              <a href="https://www.youtube.com/@VTEX-Commerce" target="_blank">
+              <a
+                href="https://www.youtube.com/@VTEX-Commerce"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={youtube} alt="youtube" />
               </a>
             </nav>

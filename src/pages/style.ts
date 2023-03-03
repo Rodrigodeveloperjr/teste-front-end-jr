@@ -6,6 +6,6 @@ const Container = styled.div`
   @media (max-width: 768px) {
     padding: 10px;
   }
-`
+`;
 
-export { Container }
+export { Container };
