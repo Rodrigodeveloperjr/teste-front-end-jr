@@ -11,7 +11,8 @@ const Container = styled.div`
 
   margin: 0 auto;
 
-  & > menu {
+  & > div {
+    width: 100%;
     height: 530px;
 
     display: flex;
@@ -25,6 +26,13 @@ const Container = styled.div`
 
     &::-webkit-scrollbar {
       display: none;
+    }
+    & > div {
+      display: flex;
+
+      & > div {
+        display: flex;
+      }
     }
   }
 

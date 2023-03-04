@@ -1,19 +1,31 @@
 import arrowRight from "../../assets/Vector (1).svg";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { IListProducts } from "../../interfaces";
 import arrowLeft from "../../assets/Vector.svg";
 import { Product } from "../Product";
 import { Container } from "./style";
+import { Navigation } from "swiper";
 
 const ListProducts = ({ setOpenModal, products }: IListProducts) => {
   return (
     <Container>
-      <img src={arrowLeft} alt="seta para esquerda" />
-      <menu>
+      <img className="btn-left" src={arrowLeft} alt="seta para esquerda" />
+      <Swiper
+        modules={[Navigation]}
+        spaceBetween={62}
+        slidesPerView={4}
+        navigation={{
+          prevEl: ".btn-left",
+          nextEl: ".btn-right",
+        }}
+      >
         {products.map((product, i) => (
-          <Product product={product} key={i} setOpenModal={setOpenModal} />
+          <SwiperSlide key={i}>
+            <Product product={product} setOpenModal={setOpenModal} />
+          </SwiperSlide>
         ))}
-      </menu>
-      <img src={arrowRight} alt="seta para direita" />
+      </Swiper>
+      <img className="btn-right" src={arrowRight} alt="seta para direita" />
     </Container>
   );
 };

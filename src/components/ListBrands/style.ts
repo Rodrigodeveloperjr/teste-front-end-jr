@@ -22,14 +22,12 @@ const Container = styled.div`
     padding-bottom: 60px;
   }
 
-  & > menu {
+  & > div {
     width: 100%;
-    max-width: 1280px;
+    height: 530px;
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
 
     padding: 10px;
 
@@ -39,6 +37,14 @@ const Container = styled.div`
 
     &::-webkit-scrollbar {
       display: none;
+    }
+    
+    & > div {
+      display: flex;
+
+      & > div {
+        display: flex;
+      }
     }
   }
 
