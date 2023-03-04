@@ -54,6 +54,10 @@ const Container = styled.div`
     text-align: center;
     color: var(--color-gray-three);
   }
+
+  @media (max-width: 1100px) {
+    margin: 10px;
+  }
 `;
 
 export { Container };

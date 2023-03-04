@@ -111,7 +111,7 @@ const Container = styled.div`
 
       & > h2 {
         font-size: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 25px;
       }
     }
   }
