@@ -23,13 +23,18 @@ const Container = styled.div`
     cursor: pointer;
   }
 
-  & > .aPink {
+  .aPink,
+  p:hover {
     color: var(--color-pink);
+    transition: 0.5s;
   }
 
   & > div:nth-last-child(1) {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    cursor: pointer;
 
     & > img {
       padding-right: 12px;

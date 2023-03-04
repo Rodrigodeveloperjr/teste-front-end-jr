@@ -44,9 +44,11 @@ const Container = styled.div`
       cursor: pointer;
       padding: 12px 58px;
 
-      &:nth-child(1) {
+      &:nth-child(1),
+      &:hover {
         font-weight: 700;
         color: var(--color-pink);
+        transition: 0.5s;
       }
     }
   }

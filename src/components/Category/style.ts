@@ -44,6 +44,7 @@ const Container = styled.div`
     align-items: center;
 
     cursor: pointer;
+    transition: background 0.5s;
   }
 
   & > p {
