@@ -1,3 +1,4 @@
+import { OtherRelatedProductsSecond } from "../components/OtherRelatedProductsSecond";
 import { OtherRelatedProducts } from "../components/OtherRelatedProducts";
 import { ModalDetailsProduct } from "../components/ModalDetailsProduct";
 import { RelatedProducts } from "../components/RelatedProducts";
@@ -53,7 +54,10 @@ const Dashboard = () => {
         <OtherRelatedProducts products={products} setOpenModal={setOpenModal} />
         <ListCards />
         <ListBrands />
-        <OtherRelatedProducts products={products} setOpenModal={setOpenModal} />
+        <OtherRelatedProductsSecond
+          products={products}
+          setOpenModal={setOpenModal}
+        />
       </Container>
       <Footer />
     </React.Fragment>

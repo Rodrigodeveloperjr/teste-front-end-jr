@@ -1,6 +1,6 @@
 import { TitleRelatedProducts } from "../TitleRelatedProducts";
+import { ListProductsSecond } from "../ListProductsSecond";
 import { IListProducts } from "../../interfaces";
-import { ListProducts } from "../ListProducts";
 import { Container } from "./style";
 
 const OtherRelatedProducts = ({ setOpenModal, products }: IListProducts) => {
@@ -11,7 +11,7 @@ const OtherRelatedProducts = ({ setOpenModal, products }: IListProducts) => {
         <p>Ver todos</p>
       </div>
 
-      <ListProducts setOpenModal={setOpenModal} products={products} />
+      <ListProductsSecond setOpenModal={setOpenModal} products={products} />
     </Container>
   );
 };
