@@ -62,6 +62,10 @@ const Container = styled.div`
         display: flex;
       }
     }
+
+    .divInput {
+      display: none;
+    }
   }
 `;
 

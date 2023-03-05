@@ -26,6 +26,8 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
 
+    margin-top: 10px;
+
     & > p {
       font-weight: 400;
       font-size: 16px;

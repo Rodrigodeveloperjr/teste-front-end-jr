@@ -1,7 +1,7 @@
 import cart from "../../assets/ShoppingCart.svg";
-import { HamburgerMenu } from "../HamburgerMenu";
 import user from "../../assets/UserCircle.svg";
 import logo from "../../assets/Group 35.svg";
+import { LateralMenu } from "../LateralMenu";
 import heart from "../../assets/Heart.svg";
 import box from "../../assets/Group.svg";
 import { Container } from "./style";
@@ -12,7 +12,7 @@ const UserInformation = () => {
     <Container>
       <div className="logoContainer">
         <img src={logo} alt="logo" />
-        <HamburgerMenu />
+        <LateralMenu />
       </div>
 
       <div className="divInput">

@@ -4,12 +4,13 @@ const Container = styled.header`
   width: 100%;
   max-width: 1280px;
 
-  box-shadow: 0px 8px 16px var(--shadow-two);
-
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background-color: var(--color-white);
+  box-shadow: 0px 8px 16px var(--shadow-two);
 
   & > hr {
     width: 100%;
@@ -20,6 +21,13 @@ const Container = styled.header`
     @media (max-width: 768px) {
       display: none;
     }
+  }
+
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+
+    z-index: 2000;
   }
 `;
 
