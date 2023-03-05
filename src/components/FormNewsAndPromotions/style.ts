@@ -80,6 +80,23 @@ const Container = styled.form`
       }
     }
   }
+
+  @media (max-width: 375px) {
+    height: unset;
+
+    & > div {
+      height: unset;
+      flex-direction: column;
+
+      & > input {
+        margin: 0 0 10px 0;
+      }
+
+      & > button {
+        max-width: unset;
+      }
+    }
+  }
 `;
 
 export { Container };

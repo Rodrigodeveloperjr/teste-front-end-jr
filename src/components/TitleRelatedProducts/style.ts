@@ -33,9 +33,10 @@ const Container = styled.div`
     color: var(--color-pink);
     padding: 0 34px 4px 34px;
 
-    @media (max-width: 768px) {
-      font-size: 20px;
-      padding: 0;
+    text-align: center;
+
+    @media (max-width: 415px) {
+      padding-bottom: 60px;
     }
   }
 `;

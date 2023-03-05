@@ -178,7 +178,10 @@ const Container = styled.footer`
   @media (max-width: 1050px) {
     & > div:nth-child(1) {
       & > div {
-        display: none;
+        & > div {
+          padding: 0;
+          margin: 20px;
+        }
       }
     }
   }

@@ -1,19 +1,37 @@
 import styled, { keyframes } from "styled-components";
 
 const menuOpen = keyframes`
-  0% {
-    width: 0;
+  from {
+    transform: translateX(100%);
   }
-  100% {
-    width: 70%;
+  to {
+    transform: translateX(0);
+  }
+`;
+
+const menuClose = keyframes`
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
   }
 `;
 
 const Container = styled.div`
   display: none;
 
+  .menuOpen {
+    animation: ${menuOpen} 1s ease-in-out;
+  }
+
+  .menuClose {
+    display: none;
+    /* animation: ${menuOpen} 1s ease-in-out forwards; */
+  }
+
   & > div {
-    width: 70%;
+    width: 75%;
 
     position: fixed;
     top: 0;
@@ -30,7 +48,6 @@ const Container = styled.div`
     border-left: 2.5px solid var(--color-white-four);
 
     padding: 10px;
-    animation: ${menuOpen} 1s forwards;
 
     & > div:nth-child(1) {
       width: 100%;
@@ -44,6 +61,8 @@ const Container = styled.div`
       & > img {
         width: 25px;
         height: 25px;
+
+        cursor: pointer;
       }
     }
 
@@ -63,7 +82,7 @@ const Container = styled.div`
       flex-direction: column;
       align-items: center;
 
-      padding-top: 15px;
+      padding-top: 25px;
 
       & > p {
         font-weight: 600;
@@ -74,13 +93,37 @@ const Container = styled.div`
         text-transform: uppercase;
 
         cursor: pointer;
-        padding: 10px 0;
+        padding: 12px 0;
       }
 
       .aPink,
       p:hover {
         color: var(--color-pink);
         transition: 0.5s;
+      }
+
+      & > div:nth-last-child(1) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        cursor: pointer;
+        padding-top: 12px;
+
+        & > img {
+          padding-right: 12px;
+        }
+
+        & > p {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 18px;
+
+          color: var(--color-gray);
+          text-transform: uppercase;
+
+          cursor: pointer;
+        }
       }
     }
 
