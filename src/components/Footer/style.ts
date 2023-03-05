@@ -22,6 +22,8 @@ const Container = styled.footer`
       display: flex;
       flex-direction: row;
 
+      flex-wrap: wrap;
+
       & > div {
         padding-right: 93px;
 
@@ -55,7 +57,8 @@ const Container = styled.footer`
 
             cursor: pointer;
 
-            ::after, ::before {
+            ::after,
+            ::before {
               content: "";
               position: absolute;
               bottom: -1px;
@@ -147,9 +150,33 @@ const Container = styled.footer`
   @media (max-width: 1440px) {
     & > div:nth-child(1),
     & > div:nth-child(2) {
-      justify-content: center;
-      text-align: center;
+      height: unset;
 
+      flex-direction: column;
+      align-items: center;
+
+      background-color: var(--color-black);
+
+      & > div:nth-child(1) {
+        padding-bottom: 30px;
+
+        & > div {
+          padding-left: 20px;
+        }
+      }
+
+      & > p {
+        text-align: center;
+      }
+
+      & > div:nth-child(2) {
+        padding-top: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 1050px) {
+    & > div:nth-child(1) {
       & > div {
         display: none;
       }
@@ -160,11 +187,6 @@ const Container = styled.footer`
     & > div:nth-child(1),
     & > div:nth-child(2) {
       padding: 20px;
-    }
-
-    & > div:nth-child(2) {
-      height: unset;
-      background-color: var(--color-black);
     }
   }
 `;

@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
 
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
 
   & > div {
     width: 100%;

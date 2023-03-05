@@ -19,15 +19,11 @@ const Container = styled.div`
     width: 100%;
     height: 40px;
 
-    border-top: 1.5px solid var(--color-gray-five);
-    border-bottom: 1.5px solid var(--color-gray-five);
-    border-right: 1.5px solid var(--color-gray-five);
-
     flex-wrap: wrap;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     & > p {
@@ -39,23 +35,26 @@ const Container = styled.div`
       text-transform: uppercase;
       color: var(--color-gray-six);
 
-      border-left: 1.5px solid var(--color-gray-five);
+      width: 100%;
+      max-width: 210px;
 
       cursor: pointer;
-      padding: 12px 58px;
+      padding: 12px 50px;
 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: 1.5px solid var(--color-gray-five);
+
+      & > p {
+      }
       &:nth-child(1),
       &:hover {
         font-weight: 700;
         color: var(--color-pink);
         transition: 0.5s;
       }
-    }
-  }
-
-  @media (max-width: 1440px) {
-    & > div:nth-child(2) {
-      display: none;
     }
   }
 `;

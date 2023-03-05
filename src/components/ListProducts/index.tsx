@@ -7,13 +7,15 @@ import { Container } from "./style";
 import { Navigation } from "swiper";
 
 const ListProducts = ({ setOpenModal, products }: IListProducts) => {
+  const width = window.screen.width;
+
   return (
     <Container>
       <img className="btn-left" src={arrowLeft} alt="seta para esquerda" />
       <Swiper
         modules={[Navigation]}
-        spaceBetween={62}
-        slidesPerView={4}
+        spaceBetween={width > 1440 ? 62 : width < 1250 ? 300 : 62}
+        slidesPerView={width > 425 ? 4 : 1}
         navigation={{
           prevEl: ".btn-left",
           nextEl: ".btn-right",
