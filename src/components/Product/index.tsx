@@ -1,10 +1,14 @@
+import { ProductContext } from "../../contexts/ProductContext";
 import { IProductComponent } from "../../interfaces";
 import { Container } from "./style";
 import { Button } from "../Button";
+import { useContext } from "react";
 
-const Product = ({ product, setOpenModal }: IProductComponent) => {
+const Product = ({ product }: IProductComponent) => {
   const priceOld = product.price + 2;
   const discount = product.price / 2;
+
+  const { setOpenModal } = useContext(ProductContext);
 
   return (
     <Container>

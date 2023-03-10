@@ -1,13 +1,19 @@
+import { ProductContext } from "../../contexts/ProductContext";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { IModalDetailsProduct } from "../../interfaces";
+import { IProduct } from "../../interfaces";
+import React, { useContext } from "react";
 import { Container } from "./style";
 import x from "../../assets/x.svg";
-import React from "react";
 
-const ModalDetailsProduct = ({
-  setOpenModal,
-  product,
-}: IModalDetailsProduct) => {
+const ModalDetailsProduct = () => {
+  const productName = sessionStorage.getItem("VTEX: name");
+
+  const { products, setOpenModal } = useContext(ProductContext);
+
+  const product = products.find(
+    (product: IProduct) => product.productName === productName
+  );
+
   return (
     <React.Fragment>
       <HelmetProvider>

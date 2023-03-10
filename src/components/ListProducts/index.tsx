@@ -1,13 +1,16 @@
+import { ProductContext } from "../../contexts/ProductContext";
 import arrowRight from "../../assets/Vector (1).svg";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { IListProducts } from "../../interfaces";
 import arrowLeft from "../../assets/Vector.svg";
 import { Product } from "../Product";
 import { Container } from "./style";
 import { Navigation } from "swiper";
+import { useContext } from "react";
 
-const ListProducts = ({ setOpenModal, products }: IListProducts) => {
+const ListProducts = () => {
   const width = window.screen.width;
+
+  const { products } = useContext(ProductContext);
 
   return (
     <Container>
@@ -23,7 +26,7 @@ const ListProducts = ({ setOpenModal, products }: IListProducts) => {
       >
         {products.map((product, i) => (
           <SwiperSlide key={i}>
-            <Product product={product} setOpenModal={setOpenModal} />
+            <Product product={product} />
           </SwiperSlide>
         ))}
       </Swiper>

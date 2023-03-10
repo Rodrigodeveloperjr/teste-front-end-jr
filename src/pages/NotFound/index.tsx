@@ -10,7 +10,7 @@ const NotFound = () => {
   return (
     <React.Fragment>
       <HelmetProvider>
-        <Helmet title="Página não encontrada - VTEX" />
+        <Helmet title="Página não encontrada | VTEX" />
       </HelmetProvider>
       <Container>
         <div>
