@@ -1,5 +1,5 @@
-import { Dashboard } from "./pages/Dashboard";
+import { AllRoutes } from "./routes";
 
-const App = () => <Dashboard />;
+const App = () => <AllRoutes />;
 
 export { App };

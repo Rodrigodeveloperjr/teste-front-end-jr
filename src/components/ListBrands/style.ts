@@ -20,6 +20,8 @@ const Container = styled.div`
 
     color: var(--color-pink);
     padding-bottom: 60px;
+
+    text-align: center;
   }
 
   & > div {
@@ -38,7 +40,7 @@ const Container = styled.div`
     &::-webkit-scrollbar {
       display: none;
     }
-    
+
     & > div {
       display: flex;
 
