@@ -18,9 +18,9 @@
 
 ## :dart: Teste
 
-Objetivo do teste é criar um e-commerce do site da VTEX.
+Esse teste é criar um e-commerce do site da VTEX.
 
-Link do projeto: [https://teste-front-end-jr-beta.vercel.app/](https://teste-front-end-jr-beta.vercel.app/)
+Link do projeto: [https://test-vtex.vercel.app/](https://test-vtex.vercel.app/)
 
 ## :rocket: Tecnologias
 
@@ -28,6 +28,7 @@ Seguintes ferramentas foram usadas neste projeto:
 
 - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Swiper](https://swiperjs.com/swiper-api/)
 - [Styled-components](https://styled-components.com/)
 - [React-helmet](https://github.com/nfl/react-helmet/)
 
@@ -48,6 +49,11 @@ $ yarn dev
 
 ## :computer: Desenvolvedor
 
-<a href="https://www.linkedin.com/in/rodrigo-de-jesus-silva">
-  <img src="./src/assets/icons8-linkedin-48.png" />
-</a>
+<div>
+	<a href="https://www.linkedin.com/in/rodrigo-de-jesus-silva">
+		<img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+	</a>
+	<a href="https://www.instagram.com/eaedigooo/">
+	<img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+	</a>
+</div>
