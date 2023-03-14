@@ -27,7 +27,7 @@ const Container = styled.header`
     position: fixed;
     top: 0;
 
-    z-index: 2000;
+    z-index: 1000;
   }
 `;
 

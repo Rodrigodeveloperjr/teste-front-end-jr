@@ -15,7 +15,7 @@ import React, { useContext } from "react";
 import { Container } from "./style";
 
 const Dashboard = () => {
-  const { openModal } = useContext(ProductContext);
+  const { openModal, setCheckbox } = useContext(ProductContext);
 
   return (
     <React.Fragment>
@@ -29,7 +29,7 @@ const Dashboard = () => {
       ) : null}
       <Header />
       <Banner />
-      <Container>
+      <Container onClick={() => setCheckbox(false)}>
         <Categories />
         <RelatedProducts />
         <ListCards />

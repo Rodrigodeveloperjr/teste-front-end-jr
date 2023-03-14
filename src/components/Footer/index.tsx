@@ -1,4 +1,5 @@
 import { FormNewsAndPromotions } from "../FormNewsAndPromotions";
+import { ProductContext } from "../../contexts/ProductContext";
 import instagram from "../../assets/044-instagram.svg";
 import facebook from "../../assets/023-facebook.svg";
 import mastercard from "../../assets/mastercard.svg";
@@ -15,10 +16,13 @@ import amex from "../../assets/amex.svg";
 import pix from "../../assets/pix.svg";
 import elo from "../../assets/elo.svg";
 import { Container } from "./style";
+import { useContext } from "react";
 
 const Footer = () => {
+  const { setCheckbox } = useContext(ProductContext);
+
   return (
-    <Container>
+    <Container onClick={() => setCheckbox(false)}>
       <div>
         <div>
           <div>

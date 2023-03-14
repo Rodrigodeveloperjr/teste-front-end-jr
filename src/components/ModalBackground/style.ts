@@ -13,7 +13,7 @@ const Container = styled.div`
   left: 0;
   top: 0;
 
-  padding: 50px;
+  padding: 30px;
   background: var(--shadow-three);
 `;
 

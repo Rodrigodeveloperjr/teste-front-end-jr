@@ -1,3 +1,4 @@
+import { ProductContext } from "../../contexts/ProductContext";
 import creditCard from "../../assets/CreditCard.svg";
 import shield from "../../assets/ShieldCheck.svg";
 import cart from "../../assets/ShoppingCart.svg";
@@ -8,13 +9,12 @@ import box from "../../assets/Group.svg";
 import bars from "../../assets/bars.svg";
 import { Container } from "./style";
 import x from "../../assets/x.svg";
-import { useState } from "react";
+import { useContext } from "react";
 import { Input } from "../Input";
 
 const LateralMenu = () => {
-  const [checkbox, setCheckbox] = useState<boolean>(false);
-
-  const [imgClicked, setImgClicked] = useState<boolean>(false);
+  const { checkbox, setCheckbox, imgClicked, setImgClicked } =
+    useContext(ProductContext);
 
   return (
     <Container>
