@@ -1,7 +1,6 @@
 import creditCard from "../../assets/CreditCard.svg";
 import shield from "../../assets/ShieldCheck.svg";
 import cart from "../../assets/ShoppingCart.svg";
-import crown from "../../assets/CrownSimple.svg";
 import user from "../../assets/UserCircle.svg";
 import heart from "../../assets/Heart.svg";
 import truck from "../../assets/Truck.svg";
@@ -15,11 +14,20 @@ import { Input } from "../Input";
 const LateralMenu = () => {
   const [checkbox, setCheckbox] = useState<boolean>(false);
 
+  const [imgClicked, setImgClicked] = useState<boolean>(false);
+
   return (
     <Container>
-      <img src={bars} alt="menu" onClick={() => setCheckbox(true)} />
+      <img
+        src={bars}
+        alt="menu"
+        onClick={() => {
+          setCheckbox(true);
+          setImgClicked(true);
+        }}
+      />
 
-      <div className={checkbox ? "menuOpen" : "menuClose"}>
+      <div className={imgClicked ? (checkbox ? "menuOpen" : "menuClose") : ""}>
         <div>
           <img src={x} alt="x" onClick={() => setCheckbox(false)} />
         </div>

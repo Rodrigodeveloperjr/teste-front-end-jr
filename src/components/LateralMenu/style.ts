@@ -21,24 +21,28 @@ const menuClose = keyframes`
 const Container = styled.div`
   display: none;
 
+  .menuOpen,
+  .menuClose {
+    display: block;
+  }
+
   .menuOpen {
-    animation: ${menuOpen} 1s ease-in-out;
+    animation: ${menuOpen} 0.8s ease-in;
   }
 
   .menuClose {
-    display: none;
-    /* animation: ${menuOpen} 1s ease-in-out forwards; */
+    animation: ${menuClose} 0.8s ease-out forwards;
   }
 
   & > div {
-    width: 75%;
+    width: 80%;
 
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
 
