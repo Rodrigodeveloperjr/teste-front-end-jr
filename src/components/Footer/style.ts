@@ -53,31 +53,11 @@ const Container = styled.footer`
             text-transform: uppercase;
             color: var(--color-white);
 
+            cursor: pointer;
             white-space: nowrap;
 
-            cursor: pointer;
-
-            ::after,
-            ::before {
-              content: "";
-              position: absolute;
-              bottom: -1px;
-              height: 2px;
-              transition: 0.3s;
-              background-color: var(--color-white);
-            }
-
-            ::after {
-              left: 0px;
-              width: 0;
-            }
-
-            :hover::after {
-              width: 100%;
-            }
-
-            :hover::before {
-              width: 0;
+            &:hover {
+              text-decoration: underline;
             }
           }
         }

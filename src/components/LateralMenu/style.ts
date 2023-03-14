@@ -110,8 +110,19 @@ const Container = styled.div`
         cursor: pointer;
         padding-top: 12px;
 
-        & > img {
-          padding-right: 12px;
+        & > svg {
+          margin-right: 7px;
+        }
+
+        &:hover {
+          p {
+            color: var(--color-pink);
+          }
+
+          path {
+            stroke: var(--color-pink);
+            transition: 0.5s;
+          }
         }
 
         & > p {
@@ -121,8 +132,6 @@ const Container = styled.div`
 
           color: var(--color-gray);
           text-transform: uppercase;
-
-          cursor: pointer;
         }
       }
     }

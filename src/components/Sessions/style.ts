@@ -36,8 +36,19 @@ const Container = styled.div`
 
     cursor: pointer;
 
-    & > img {
-      padding-right: 12px;
+    & > svg {
+      margin-right: 7px;
+    }
+
+    &:hover {
+      p {
+        color: var(--color-pink);
+      }
+
+      path {
+        stroke: var(--color-pink);
+        transition: 0.5s;
+      }
     }
   }
 

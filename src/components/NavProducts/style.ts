@@ -55,7 +55,6 @@ const Container = styled.div`
       &:hover {
         font-weight: 700;
         color: var(--color-pink);
-        transition: 0.5s;
       }
     }
   }
