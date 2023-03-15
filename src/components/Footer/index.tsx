@@ -91,6 +91,8 @@ const Footer = () => {
         <FormNewsAndPromotions />
       </div>
 
+      <hr />
+
       <div>
         <p>
           Copyright © 2019. Todos os direitos reservados. Todas as marcas e suas
