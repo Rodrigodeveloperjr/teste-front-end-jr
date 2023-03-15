@@ -12,8 +12,8 @@ const Container = styled.div`
     width: 100%;
     height: 284px;
 
+    object-fit: cover;
     border-radius: 10px;
-    mix-blend-mode: normal;
   }
 
   & > div {

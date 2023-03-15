@@ -59,7 +59,7 @@ const Container = styled.form`
       width: 100%;
 
       border: 1px solid var(--color-black-two);
-      padding: 13px 25px 12px 25px;
+      padding: 13px 15px;
 
       font-weight: 400;
       font-size: 12px;

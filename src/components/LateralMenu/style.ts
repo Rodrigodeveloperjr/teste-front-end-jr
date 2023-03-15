@@ -27,11 +27,11 @@ const Container = styled.div`
   }
 
   .menuOpen {
-    animation: ${menuOpen} 0.8s ease-in;
+    animation: ${menuOpen} 0.5s ease-in;
   }
 
   .menuClose {
-    animation: ${menuClose} 0.8s ease-out forwards;
+    animation: ${menuClose} 0.3s ease-out forwards;
   }
 
   & > div {

@@ -86,6 +86,12 @@ const Container = styled.div`
     margin-top: 90px;
 
     & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      padding: 50px;
+
       & > h1 {
         font-size: 30px;
         padding-bottom: 0;
@@ -98,14 +104,8 @@ const Container = styled.div`
     }
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 375px) {
     & > div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      padding: 52px 30px 50px 30px;
-
       & > h1 {
         font-size: 20px;
         line-height: 30px;
