@@ -70,10 +70,6 @@ const Container = styled.footer`
         & > .navSocialMedia {
           flex-direction: row;
           justify-content: space-between;
-
-          & > img {
-            cursor: pointer;
-          }
         }
 
         & > .paymentMethods {
