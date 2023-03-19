@@ -15,11 +15,13 @@ const Container = styled.div`
   & > div {
     display: flex;
     flex-direction: row;
+    align-items: end;
 
     & > p {
       padding-left: 12.12px;
       display: flex;
       flex-direction: row;
+      align-items: center;
 
       font-weight: 500;
       font-size: 12px;

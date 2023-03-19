@@ -35,8 +35,20 @@ const Container = styled.div`
       justify-content: space-between;
       align-items: center;
 
-      & > img {
+      & > svg {
         cursor: pointer;
+
+        &:hover {
+          path {
+            stroke: var(--color-pink);
+          }
+        }
+
+        &:nth-child(1):hover {
+          path {
+            fill: var(--color-pink);
+          }
+        }
       }
     }
   }
