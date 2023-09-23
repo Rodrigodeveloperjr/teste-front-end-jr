@@ -41,7 +41,7 @@ const Container = styled.div`
     }
   }
 
-  & > img {
+  & > svg {
     cursor: pointer;
   }
 

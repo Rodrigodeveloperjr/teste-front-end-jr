@@ -35,12 +35,11 @@ const Container = styled.div`
   }
 
   & > div {
-    width: 80%;
+    width: 100%;
 
     position: fixed;
-    top: 0;
+    top: 90px;
     right: 0;
-    bottom: 0;
 
     display: none;
     flex-direction: column;
@@ -49,7 +48,8 @@ const Container = styled.div`
     z-index: 2000;
 
     background-color: var(--color-white);
-    border-left: 2.5px solid var(--color-white-four);
+    box-shadow: 0px 8px 16px var(--shadow-two);
+    border-top: 2.5px solid var(--color-white-four);
 
     padding: 10px;
 
@@ -61,6 +61,7 @@ const Container = styled.div`
       justify-content: flex-end;
 
       padding: 18px 0;
+      display: none;
 
       & > img {
         width: 25px;
@@ -86,7 +87,7 @@ const Container = styled.div`
       flex-direction: column;
       align-items: center;
 
-      padding-top: 25px;
+      padding: 20px 0;
 
       & > p {
         font-weight: 600;
@@ -147,6 +148,8 @@ const Container = styled.div`
 
       position: absolute;
       bottom: 0;
+
+      display: none;
 
       & > div {
         display: flex;

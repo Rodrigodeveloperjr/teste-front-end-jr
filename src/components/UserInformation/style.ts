@@ -41,12 +41,14 @@ const Container = styled.div`
         &:hover {
           path {
             stroke: var(--color-pink);
+            transition: 0.5s;
           }
         }
 
         &:nth-child(1):hover {
           path {
             fill: var(--color-pink);
+            transition: 0.5s;
           }
         }
       }
